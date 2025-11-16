@@ -1,0 +1,252 @@
+{
+  "books": {
+    "CALLS_0DTE_11": {
+      "feature_columns": [
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/CALLS_0DTE_11/fold_01",
+          "test_size": 83,
+          "train_size": 83
+        },
+        {
+          "fold": 2,
+          "path": "train/CALLS_0DTE_11/fold_02",
+          "test_size": 83,
+          "train_size": 166
+        },
+        {
+          "fold": 3,
+          "path": "train/CALLS_0DTE_11/fold_03",
+          "test_size": 83,
+          "train_size": 249
+        },
+        {
+          "fold": 4,
+          "path": "train/CALLS_0DTE_11/fold_04",
+          "test_size": 83,
+          "train_size": 332
+        },
+        {
+          "fold": 5,
+          "path": "train/CALLS_0DTE_11/fold_05",
+          "test_size": 83,
+          "train_size": 415
+        },
+        {
+          "fold": 6,
+          "path": "train/CALLS_0DTE_11/fold_06",
+          "test_size": 83,
+          "train_size": 498
+        },
+        {
+          "fold": 7,
+          "path": "train/CALLS_0DTE_11/fold_07",
+          "test_size": 83,
+          "train_size": 581
+        },
+        {
+          "fold": 8,
+          "path": "train/CALLS_0DTE_11/fold_08",
+          "test_size": 83,
+          "train_size": 664
+        }
+      ]
+    },
+    "CALLS_1DTE_1515": {
+      "feature_columns": [
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/CALLS_1DTE_1515/fold_01",
+          "test_size": 82,
+          "train_size": 82
+        },
+        {
+          "fold": 2,
+          "path": "train/CALLS_1DTE_1515/fold_02",
+          "test_size": 82,
+          "train_size": 164
+        },
+        {
+          "fold": 3,
+          "path": "train/CALLS_1DTE_1515/fold_03",
+          "test_size": 82,
+          "train_size": 246
+        },
+        {
+          "fold": 4,
+          "path": "train/CALLS_1DTE_1515/fold_04",
+          "test_size": 82,
+          "train_size": 328
+        },
+        {
+          "fold": 5,
+          "path": "train/CALLS_1DTE_1515/fold_05",
+          "test_size": 82,
+          "train_size": 410
+        },
+        {
+          "fold": 6,
+          "path": "train/CALLS_1DTE_1515/fold_06",
+          "test_size": 82,
+          "train_size": 492
+        },
+        {
+          "fold": 7,
+          "path": "train/CALLS_1DTE_1515/fold_07",
+          "test_size": 82,
+          "train_size": 574
+        },
+        {
+          "fold": 8,
+          "path": "train/CALLS_1DTE_1515/fold_08",
+          "test_size": 82,
+          "train_size": 656
+        }
+      ]
+    },
+    "PUTS_0DTE_11": {
+      "feature_columns": [
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/PUTS_0DTE_11/fold_01",
+          "test_size": 83,
+          "train_size": 83
+        },
+        {
+          "fold": 2,
+          "path": "train/PUTS_0DTE_11/fold_02",
+          "test_size": 83,
+          "train_size": 166
+        },
+        {
+          "fold": 3,
+          "path": "train/PUTS_0DTE_11/fold_03",
+          "test_size": 83,
+          "train_size": 249
+        },
+        {
+          "fold": 4,
+          "path": "train/PUTS_0DTE_11/fold_04",
+          "test_size": 83,
+          "train_size": 332
+        },
+        {
+          "fold": 5,
+          "path": "train/PUTS_0DTE_11/fold_05",
+          "test_size": 83,
+          "train_size": 415
+        },
+        {
+          "fold": 6,
+          "path": "train/PUTS_0DTE_11/fold_06",
+          "test_size": 83,
+          "train_size": 498
+        },
+        {
+          "fold": 7,
+          "path": "train/PUTS_0DTE_11/fold_07",
+          "test_size": 83,
+          "train_size": 581
+        },
+        {
+          "fold": 8,
+          "path": "train/PUTS_0DTE_11/fold_08",
+          "test_size": 83,
+          "train_size": 664
+        }
+      ]
+    },
+    "PUTS_1DTE_1515": {
+      "feature_columns": [
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/PUTS_1DTE_1515/fold_01",
+          "test_size": 82,
+          "train_size": 82
+        },
+        {
+          "fold": 2,
+          "path": "train/PUTS_1DTE_1515/fold_02",
+          "test_size": 82,
+          "train_size": 164
+        },
+        {
+          "fold": 3,
+          "path": "train/PUTS_1DTE_1515/fold_03",
+          "test_size": 82,
+          "train_size": 246
+        },
+        {
+          "fold": 4,
+          "path": "train/PUTS_1DTE_1515/fold_04",
+          "test_size": 82,
+          "train_size": 328
+        },
+        {
+          "fold": 5,
+          "path": "train/PUTS_1DTE_1515/fold_05",
+          "test_size": 82,
+          "train_size": 410
+        },
+        {
+          "fold": 6,
+          "path": "train/PUTS_1DTE_1515/fold_06",
+          "test_size": 82,
+          "train_size": 492
+        },
+        {
+          "fold": 7,
+          "path": "train/PUTS_1DTE_1515/fold_07",
+          "test_size": 82,
+          "train_size": 574
+        },
+        {
+          "fold": 8,
+          "path": "train/PUTS_1DTE_1515/fold_08",
+          "test_size": 82,
+          "train_size": 656
+        }
+      ]
+    }
+  }
+}

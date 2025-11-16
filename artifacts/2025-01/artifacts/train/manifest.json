@@ -1,0 +1,432 @@
+{
+  "books": {
+    "CALLS_0DTE_11": {
+      "feature_columns": [
+        "DoW",
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "L1_SPX_ATR_Pct",
+        "L1_SPX_Drawdown_Pct",
+        "L1_TS",
+        "L1_VIX_Close",
+        "L1_VIX_pct",
+        "L1_rv20",
+        "L1_rv5",
+        "L1_vvix_above_ema20",
+        "L1_vvix_above_ema30",
+        "L1_vvix_close",
+        "L1_vvix_ema20",
+        "L1_vvix_ema30",
+        "L1_vvix_pct",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix",
+        "t0_VIX_change_from_close_11",
+        "t0_VIX_change_from_close_15"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/CALLS_0DTE_11/fold_01",
+          "test_size": 83,
+          "train_size": 83
+        },
+        {
+          "fold": 2,
+          "path": "train/CALLS_0DTE_11/fold_02",
+          "test_size": 83,
+          "train_size": 166
+        },
+        {
+          "fold": 3,
+          "path": "train/CALLS_0DTE_11/fold_03",
+          "test_size": 83,
+          "train_size": 249
+        },
+        {
+          "fold": 4,
+          "path": "train/CALLS_0DTE_11/fold_04",
+          "test_size": 83,
+          "train_size": 332
+        },
+        {
+          "fold": 5,
+          "path": "train/CALLS_0DTE_11/fold_05",
+          "test_size": 83,
+          "train_size": 415
+        },
+        {
+          "fold": 6,
+          "path": "train/CALLS_0DTE_11/fold_06",
+          "test_size": 83,
+          "train_size": 498
+        },
+        {
+          "fold": 7,
+          "path": "train/CALLS_0DTE_11/fold_07",
+          "test_size": 83,
+          "train_size": 581
+        },
+        {
+          "fold": 8,
+          "path": "train/CALLS_0DTE_11/fold_08",
+          "test_size": 83,
+          "train_size": 664
+        }
+      ],
+      "shap": {
+        "expected_value": -2132.9973930192505,
+        "importance": {
+          "DoW": 0.0,
+          "Intraday_Move_OpenToEntry_11": 273.95194427427026,
+          "Intraday_Move_OpenToEntry_1515": 652.669173944211,
+          "L1_SPX_ATR_Pct": 0.0,
+          "L1_SPX_Drawdown_Pct": 0.0,
+          "L1_TS": 0.0,
+          "L1_VIX_Close": 0.0,
+          "L1_VIX_pct": 0.0,
+          "L1_rv20": 0.0,
+          "L1_rv5": 0.0,
+          "L1_vvix_above_ema20": 0.0,
+          "L1_vvix_above_ema30": 0.0,
+          "L1_vvix_close": 0.0,
+          "L1_vvix_ema20": 0.0,
+          "L1_vvix_ema30": 0.0,
+          "L1_vvix_pct": 0.0,
+          "VIX_Entry_11": 238.90911601973352,
+          "VIX_Entry_1515": 175.86658429185889,
+          "closing_vix": 0.0,
+          "gap": 246.55139528805782,
+          "movement": 726.3165286461497,
+          "opening_vix": 0.0,
+          "t0_VIX_change_from_close_11": 0.0,
+          "t0_VIX_change_from_close_15": 0.0
+        }
+      }
+    },
+    "CALLS_1DTE_1515": {
+      "feature_columns": [
+        "DoW",
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "L1_SPX_ATR_Pct",
+        "L1_SPX_Drawdown_Pct",
+        "L1_TS",
+        "L1_VIX_Close",
+        "L1_VIX_pct",
+        "L1_rv20",
+        "L1_rv5",
+        "L1_vvix_above_ema20",
+        "L1_vvix_above_ema30",
+        "L1_vvix_close",
+        "L1_vvix_ema20",
+        "L1_vvix_ema30",
+        "L1_vvix_pct",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix",
+        "t0_VIX_change_from_close_11",
+        "t0_VIX_change_from_close_15"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/CALLS_1DTE_1515/fold_01",
+          "test_size": 82,
+          "train_size": 82
+        },
+        {
+          "fold": 2,
+          "path": "train/CALLS_1DTE_1515/fold_02",
+          "test_size": 82,
+          "train_size": 164
+        },
+        {
+          "fold": 3,
+          "path": "train/CALLS_1DTE_1515/fold_03",
+          "test_size": 82,
+          "train_size": 246
+        },
+        {
+          "fold": 4,
+          "path": "train/CALLS_1DTE_1515/fold_04",
+          "test_size": 82,
+          "train_size": 328
+        },
+        {
+          "fold": 5,
+          "path": "train/CALLS_1DTE_1515/fold_05",
+          "test_size": 82,
+          "train_size": 410
+        },
+        {
+          "fold": 6,
+          "path": "train/CALLS_1DTE_1515/fold_06",
+          "test_size": 82,
+          "train_size": 492
+        },
+        {
+          "fold": 7,
+          "path": "train/CALLS_1DTE_1515/fold_07",
+          "test_size": 82,
+          "train_size": 574
+        },
+        {
+          "fold": 8,
+          "path": "train/CALLS_1DTE_1515/fold_08",
+          "test_size": 82,
+          "train_size": 656
+        }
+      ],
+      "shap": {
+        "expected_value": -537.776914671703,
+        "importance": {
+          "DoW": 0.0,
+          "Intraday_Move_OpenToEntry_11": 4.601897747552735,
+          "Intraday_Move_OpenToEntry_1515": 4.716778969232156,
+          "L1_SPX_ATR_Pct": 0.0,
+          "L1_SPX_Drawdown_Pct": 0.0,
+          "L1_TS": 0.0,
+          "L1_VIX_Close": 0.0,
+          "L1_VIX_pct": 0.0,
+          "L1_rv20": 0.0,
+          "L1_rv5": 0.0,
+          "L1_vvix_above_ema20": 0.0,
+          "L1_vvix_above_ema30": 0.0,
+          "L1_vvix_close": 0.0,
+          "L1_vvix_ema20": 0.0,
+          "L1_vvix_ema30": 0.0,
+          "L1_vvix_pct": 0.0,
+          "VIX_Entry_11": 3.6564024374261765,
+          "VIX_Entry_1515": 6.679690945445392,
+          "closing_vix": 0.0,
+          "gap": 3.2514102941785374,
+          "movement": 0.0,
+          "opening_vix": 0.0,
+          "t0_VIX_change_from_close_11": 0.0,
+          "t0_VIX_change_from_close_15": 0.0
+        }
+      }
+    },
+    "PUTS_0DTE_11": {
+      "feature_columns": [
+        "DoW",
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "L1_SPX_ATR_Pct",
+        "L1_SPX_Drawdown_Pct",
+        "L1_TS",
+        "L1_VIX_Close",
+        "L1_VIX_pct",
+        "L1_rv20",
+        "L1_rv5",
+        "L1_vvix_above_ema20",
+        "L1_vvix_above_ema30",
+        "L1_vvix_close",
+        "L1_vvix_ema20",
+        "L1_vvix_ema30",
+        "L1_vvix_pct",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix",
+        "t0_VIX_change_from_close_11",
+        "t0_VIX_change_from_close_15"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/PUTS_0DTE_11/fold_01",
+          "test_size": 83,
+          "train_size": 83
+        },
+        {
+          "fold": 2,
+          "path": "train/PUTS_0DTE_11/fold_02",
+          "test_size": 83,
+          "train_size": 166
+        },
+        {
+          "fold": 3,
+          "path": "train/PUTS_0DTE_11/fold_03",
+          "test_size": 83,
+          "train_size": 249
+        },
+        {
+          "fold": 4,
+          "path": "train/PUTS_0DTE_11/fold_04",
+          "test_size": 83,
+          "train_size": 332
+        },
+        {
+          "fold": 5,
+          "path": "train/PUTS_0DTE_11/fold_05",
+          "test_size": 83,
+          "train_size": 415
+        },
+        {
+          "fold": 6,
+          "path": "train/PUTS_0DTE_11/fold_06",
+          "test_size": 83,
+          "train_size": 498
+        },
+        {
+          "fold": 7,
+          "path": "train/PUTS_0DTE_11/fold_07",
+          "test_size": 83,
+          "train_size": 581
+        },
+        {
+          "fold": 8,
+          "path": "train/PUTS_0DTE_11/fold_08",
+          "test_size": 83,
+          "train_size": 664
+        }
+      ],
+      "shap": {
+        "expected_value": -2522.8454431912196,
+        "importance": {
+          "DoW": 0.0,
+          "Intraday_Move_OpenToEntry_11": 629.3041281207334,
+          "Intraday_Move_OpenToEntry_1515": 534.4728773290742,
+          "L1_SPX_ATR_Pct": 0.0,
+          "L1_SPX_Drawdown_Pct": 0.0,
+          "L1_TS": 0.0,
+          "L1_VIX_Close": 0.0,
+          "L1_VIX_pct": 0.0,
+          "L1_rv20": 0.0,
+          "L1_rv5": 0.0,
+          "L1_vvix_above_ema20": 0.0,
+          "L1_vvix_above_ema30": 0.0,
+          "L1_vvix_close": 0.0,
+          "L1_vvix_ema20": 0.0,
+          "L1_vvix_ema30": 0.0,
+          "L1_vvix_pct": 0.0,
+          "VIX_Entry_11": 368.7713717916239,
+          "VIX_Entry_1515": 327.1416611615239,
+          "closing_vix": 0.0,
+          "gap": 219.63778662429502,
+          "movement": 419.87036131109005,
+          "opening_vix": 0.0,
+          "t0_VIX_change_from_close_11": 0.0,
+          "t0_VIX_change_from_close_15": 0.0
+        }
+      }
+    },
+    "PUTS_1DTE_1515": {
+      "feature_columns": [
+        "DoW",
+        "Intraday_Move_OpenToEntry_11",
+        "Intraday_Move_OpenToEntry_1515",
+        "L1_SPX_ATR_Pct",
+        "L1_SPX_Drawdown_Pct",
+        "L1_TS",
+        "L1_VIX_Close",
+        "L1_VIX_pct",
+        "L1_rv20",
+        "L1_rv5",
+        "L1_vvix_above_ema20",
+        "L1_vvix_above_ema30",
+        "L1_vvix_close",
+        "L1_vvix_ema20",
+        "L1_vvix_ema30",
+        "L1_vvix_pct",
+        "VIX_Entry_11",
+        "VIX_Entry_1515",
+        "closing_vix",
+        "gap",
+        "movement",
+        "opening_vix",
+        "t0_VIX_change_from_close_11",
+        "t0_VIX_change_from_close_15"
+      ],
+      "folds": [
+        {
+          "fold": 1,
+          "path": "train/PUTS_1DTE_1515/fold_01",
+          "test_size": 82,
+          "train_size": 82
+        },
+        {
+          "fold": 2,
+          "path": "train/PUTS_1DTE_1515/fold_02",
+          "test_size": 82,
+          "train_size": 164
+        },
+        {
+          "fold": 3,
+          "path": "train/PUTS_1DTE_1515/fold_03",
+          "test_size": 82,
+          "train_size": 246
+        },
+        {
+          "fold": 4,
+          "path": "train/PUTS_1DTE_1515/fold_04",
+          "test_size": 82,
+          "train_size": 328
+        },
+        {
+          "fold": 5,
+          "path": "train/PUTS_1DTE_1515/fold_05",
+          "test_size": 82,
+          "train_size": 410
+        },
+        {
+          "fold": 6,
+          "path": "train/PUTS_1DTE_1515/fold_06",
+          "test_size": 82,
+          "train_size": 492
+        },
+        {
+          "fold": 7,
+          "path": "train/PUTS_1DTE_1515/fold_07",
+          "test_size": 82,
+          "train_size": 574
+        },
+        {
+          "fold": 8,
+          "path": "train/PUTS_1DTE_1515/fold_08",
+          "test_size": 82,
+          "train_size": 656
+        }
+      ],
+      "shap": {
+        "expected_value": -572.5996124111077,
+        "importance": {
+          "DoW": 0.0,
+          "Intraday_Move_OpenToEntry_11": 4.5880657909946185,
+          "Intraday_Move_OpenToEntry_1515": 4.464744324235985,
+          "L1_SPX_ATR_Pct": 0.0,
+          "L1_SPX_Drawdown_Pct": 0.0,
+          "L1_TS": 0.0,
+          "L1_VIX_Close": 0.0,
+          "L1_VIX_pct": 0.0,
+          "L1_rv20": 0.0,
+          "L1_rv5": 0.0,
+          "L1_vvix_above_ema20": 0.0,
+          "L1_vvix_above_ema30": 0.0,
+          "L1_vvix_close": 0.0,
+          "L1_vvix_ema20": 0.0,
+          "L1_vvix_ema30": 0.0,
+          "L1_vvix_pct": 0.0,
+          "VIX_Entry_11": 4.5429834175473855,
+          "VIX_Entry_1515": 8.931327077422184,
+          "closing_vix": 0.0,
+          "gap": 4.736814179523929,
+          "movement": 0.0,
+          "opening_vix": 0.0,
+          "t0_VIX_change_from_close_11": 0.0,
+          "t0_VIX_change_from_close_15": 0.0
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Date Opened,Time Opened,Opening Price,Legs,Premium,Closing Price,Date Closed,Time Closed,Avg. Closing Cost,Reason For Close,P/L,No. of Contracts,Funds at Close,Margin Req.,Strategy,Opening Short/Long Ratio,Closing Short/Long Ratio,Opening VIX,Closing VIX,Gap,Movement,Max Profit,Max Loss
+2024-01-02,09:30:00,4050.0,2 Jan 24 4050 C STO 1.10,1.10,0.70,2024-01-02,11:00:00,0.70,Target,40.0,3,3000.0,4500.0,0DTE Call Spread,1.05,1.0,14.8,15.0,0.15,0.25,160.0,-220.0
+2024-01-03,10:00:00,4060.0,3 Jan 24 4060 C STO 1.45,1.45,0.95,2024-01-03,11:00:00,0.95,Stop,55.0,2,2500.0,4300.0,0DTE Call Spread,1.1,1.02,14.9,15.3,0.10,0.28,170.0,-210.0

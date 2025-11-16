@@ -1,0 +1,14 @@
+{
+  "book": "PUTS_0DTE_11",
+  "fold": 2,
+  "keep_threshold": 198.63537263294785,
+  "kept_count": 0,
+  "metrics": {
+    "CVaR": NaN,
+    "EDP": NaN,
+    "MaxDrawdown": NaN,
+    "PF": NaN,
+    "Sharpe": NaN,
+    "WinRate": NaN
+  }
+}

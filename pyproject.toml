@@ -1,0 +1,111 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "xdte-ml-selector"
+version = "0.0.1"
+description = "Machine Learning Selector for XDTE"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "XDTE Contributors"},
+]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "click>=8.1.7",
+    "lightgbm>=4.0.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "shap>=0.44.0",
+    "yfinance>=0.2.37",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=24.4.2",
+    "docutils>=0.20,<0.22",
+    "flake8>=7.0.0",
+    "hypothesis[pandas]>=6.103.0",
+    "isort>=5.13.2",
+    "mypy>=1.10.0",
+    "ruff>=0.5.0",
+    "pre-commit>=3.7.0",
+    "pytest>=7.4.4",
+    "pytest-cov>=4.1.0",
+    "tomli>=2.0.0; python_version < '3.11'",
+    "sphinx>=7.3.7",
+]
+
+[project.urls]
+Homepage = "https://github.com/jcsellers/xdte"
+Issues = "https://github.com/jcsellers/xdte/issues"
+
+[project.scripts]
+xdte = "xdte.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["xdte"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"xdte" = ["*.json"]
+
+[tool.black]
+line-length = 88
+target-version = ["py39", "py310", "py311", "py312"]
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.ruff]
+line-length = 88
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["T201"]
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = ["E203"]
+per-file-ignores = {}
+
+[tool.mypy]
+python_version = "3.9"
+strict = true
+mypy_path = ["src"]
+files = ["src"]
+
+[[tool.mypy.overrides]]
+module = ["shap"]
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = ["pandas", "pandas.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+addopts = ["-q"]
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = [
+    "src/xdte/live/providers.py",
+]

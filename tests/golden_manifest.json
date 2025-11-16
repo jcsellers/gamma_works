@@ -1,0 +1,803 @@
+{
+  "meta": {
+    "run_label": "golden-2025-11-11",
+    "created_utc": "1970-01-01T00:00:42+00:00",
+    "repo_commit": "local-dev",
+    "env": {
+      "python": ">=3.10",
+      "numpy": ">=1.26",
+      "pandas": ">=2.0",
+      "lightgbm": ">=4.0",
+      "optuna": ">=3.5"
+    },
+    "seed": 42,
+    "kit_version": "original"
+  },
+  "config": {
+    "n_folds": 8,
+    "alpha": 0.05,
+    "winsor_p": 0.01,
+    "books": [
+      "CALLS_0DTE_11",
+      "CALLS_1DTE_1515",
+      "PUTS_0DTE_11",
+      "PUTS_1DTE_1515"
+    ]
+  },
+  "rules": {
+    "CALLS_0DTE_11": {
+      "folds": [
+        {
+          "fold": 1,
+          "keep_threshold": 761.3774263330126,
+          "winsor_limits": [
+            -7129.8,
+            8655.819999999974
+          ]
+        },
+        {
+          "fold": 2,
+          "keep_threshold": 76.03375453803258,
+          "winsor_limits": [
+            -6955.0,
+            7138.849999999992
+          ]
+        },
+        {
+          "fold": 3,
+          "keep_threshold": 597.0228299058019,
+          "winsor_limits": [
+            -6581.6,
+            8628.000000000011
+          ]
+        },
+        {
+          "fold": 4,
+          "keep_threshold": 627.9964533258849,
+          "winsor_limits": [
+            -5994.9,
+            10928.8
+          ]
+        },
+        {
+          "fold": 5,
+          "keep_threshold": 445.150244986629,
+          "winsor_limits": [
+            -5681.3,
+            10587.200000000004
+          ]
+        },
+        {
+          "fold": 6,
+          "keep_threshold": 486.122026455375,
+          "winsor_limits": [
+            -5711.8,
+            11206.12999999999
+          ]
+        },
+        {
+          "fold": 7,
+          "keep_threshold": 591.6104504297982,
+          "winsor_limits": [
+            -5546.0,
+            11602.800000000008
+          ]
+        },
+        {
+          "fold": 8,
+          "keep_threshold": 711.3096205522229,
+          "winsor_limits": [
+            -6907.4,
+            12681.290000000012
+          ]
+        }
+      ],
+      "prediction_percentiles": [
+        [
+          0.0,
+          -7964.925401039641
+        ],
+        [
+          0.05,
+          -5336.430278886493
+        ],
+        [
+          0.1,
+          -4271.696725245255
+        ],
+        [
+          0.15,
+          -3540.286002864163
+        ],
+        [
+          0.2,
+          -3098.175595235509
+        ],
+        [
+          0.25,
+          -2679.393242972281
+        ],
+        [
+          0.3,
+          -2402.30892358707
+        ],
+        [
+          0.35,
+          -2250.0421079922885
+        ],
+        [
+          0.4,
+          -2059.378307332911
+        ],
+        [
+          0.45,
+          -1889.4969602899434
+        ],
+        [
+          0.5,
+          -1725.0656795172044
+        ],
+        [
+          0.55,
+          -1557.4795340691867
+        ],
+        [
+          0.6,
+          -1369.6139133089778
+        ],
+        [
+          0.65,
+          -1194.2256075422454
+        ],
+        [
+          0.7,
+          -967.1870280375913
+        ],
+        [
+          0.75,
+          -755.4565049409898
+        ],
+        [
+          0.8,
+          -538.9747309232157
+        ],
+        [
+          0.85,
+          -312.49997140568075
+        ],
+        [
+          0.9,
+          -58.68157855591508
+        ],
+        [
+          0.95,
+          275.82138427430215
+        ],
+        [
+          1.0,
+          1244.3717703576326
+        ]
+      ],
+      "winsor_p": 0.01
+    },
+    "CALLS_1DTE_1515": {
+      "folds": [
+        {
+          "fold": 1,
+          "keep_threshold": -519.3033177672712,
+          "winsor_limits": [
+            -560.0,
+            505.95
+          ]
+        },
+        {
+          "fold": 2,
+          "keep_threshold": -508.211617707896,
+          "winsor_limits": [
+            -561.85,
+            510.0
+          ]
+        },
+        {
+          "fold": 3,
+          "keep_threshold": -506.615343730547,
+          "winsor_limits": [
+            -582.75,
+            510.0
+          ]
+        },
+        {
+          "fold": 4,
+          "keep_threshold": -502.5187589743308,
+          "winsor_limits": [
+            -583.6500000000001,
+            510.0
+          ]
+        },
+        {
+          "fold": 5,
+          "keep_threshold": -503.3652179390156,
+          "winsor_limits": [
+            -580.0,
+            510.0
+          ]
+        },
+        {
+          "fold": 6,
+          "keep_threshold": -501.87238673276374,
+          "winsor_limits": [
+            -585.0,
+            510.0
+          ]
+        },
+        {
+          "fold": 7,
+          "keep_threshold": -502.3735015983767,
+          "winsor_limits": [
+            -585.0,
+            515.0
+          ]
+        },
+        {
+          "fold": 8,
+          "keep_threshold": -492.90479615025856,
+          "winsor_limits": [
+            -582.25,
+            530.0
+          ]
+        }
+      ],
+      "prediction_percentiles": [
+        [
+          0.0,
+          -607.7501449878459
+        ],
+        [
+          0.05,
+          -569.0903644144521
+        ],
+        [
+          0.1,
+          -560.8661634006394
+        ],
+        [
+          0.15,
+          -555.8226269827906
+        ],
+        [
+          0.2,
+          -551.7780435390581
+        ],
+        [
+          0.25,
+          -548.7327457326702
+        ],
+        [
+          0.3,
+          -545.0451818370258
+        ],
+        [
+          0.35,
+          -542.7507410845978
+        ],
+        [
+          0.4,
+          -540.5477848522074
+        ],
+        [
+          0.45,
+          -538.8887014829625
+        ],
+        [
+          0.5,
+          -536.4187976680485
+        ],
+        [
+          0.55,
+          -534.138662268908
+        ],
+        [
+          0.6,
+          -531.6321692428644
+        ],
+        [
+          0.65,
+          -529.4900603625474
+        ],
+        [
+          0.7,
+          -526.6603626799406
+        ],
+        [
+          0.75,
+          -523.8040217029333
+        ],
+        [
+          0.8,
+          -520.6526796436788
+        ],
+        [
+          0.85,
+          -518.1687486763716
+        ],
+        [
+          0.9,
+          -513.9794239865565
+        ],
+        [
+          0.95,
+          -508.83834184907516
+        ],
+        [
+          1.0,
+          -488.3110529934327
+        ]
+      ],
+      "winsor_p": 0.01
+    },
+    "PUTS_0DTE_11": {
+      "folds": [
+        {
+          "fold": 1,
+          "keep_threshold": 289.9873541278664,
+          "winsor_limits": [
+            -7757.3,
+            7235.19999999993
+          ]
+        },
+        {
+          "fold": 2,
+          "keep_threshold": 198.63537263294785,
+          "winsor_limits": [
+            -7547.0,
+            8000.249999999968
+          ]
+        },
+        {
+          "fold": 3,
+          "keep_threshold": 273.98822757989666,
+          "winsor_limits": [
+            -7401.799999999999,
+            9835.400000000012
+          ]
+        },
+        {
+          "fold": 4,
+          "keep_threshold": 305.00468556304975,
+          "winsor_limits": [
+            -7266.75,
+            10701.829999999998
+          ]
+        },
+        {
+          "fold": 5,
+          "keep_threshold": 339.98704632806647,
+          "winsor_limits": [
+            -7072.900000000001,
+            10790.480000000003
+          ]
+        },
+        {
+          "fold": 6,
+          "keep_threshold": 398.6515624282191,
+          "winsor_limits": [
+            -7217.25,
+            10919.989999999993
+          ]
+        },
+        {
+          "fold": 7,
+          "keep_threshold": 383.7633476166152,
+          "winsor_limits": [
+            -7230.0,
+            10845.000000000004
+          ]
+        },
+        {
+          "fold": 8,
+          "keep_threshold": 411.0725396746512,
+          "winsor_limits": [
+            -8076.35,
+            13621.27000000001
+          ]
+        }
+      ],
+      "prediction_percentiles": [
+        [
+          0.0,
+          -10987.957724094038
+        ],
+        [
+          0.05,
+          -5657.342661208941
+        ],
+        [
+          0.1,
+          -4709.789796391271
+        ],
+        [
+          0.15,
+          -4255.1379372692045
+        ],
+        [
+          0.2,
+          -3749.2716896591264
+        ],
+        [
+          0.25,
+          -3413.115845060969
+        ],
+        [
+          0.3,
+          -3054.759947151745
+        ],
+        [
+          0.35,
+          -2663.1299218222066
+        ],
+        [
+          0.4,
+          -2347.393099113955
+        ],
+        [
+          0.45,
+          -2108.9101584094847
+        ],
+        [
+          0.5,
+          -1857.7341420906532
+        ],
+        [
+          0.55,
+          -1649.2091424457033
+        ],
+        [
+          0.6,
+          -1462.6852258866757
+        ],
+        [
+          0.65,
+          -1279.3408371614496
+        ],
+        [
+          0.7,
+          -1093.7655128564206
+        ],
+        [
+          0.75,
+          -901.1894575015917
+        ],
+        [
+          0.8,
+          -701.9690446623579
+        ],
+        [
+          0.85,
+          -519.3311425623228
+        ],
+        [
+          0.9,
+          -262.3767079718358
+        ],
+        [
+          0.95,
+          76.59851688793265
+        ],
+        [
+          1.0,
+          478.0796488539826
+        ]
+      ],
+      "winsor_p": 0.01
+    },
+    "PUTS_1DTE_1515": {
+      "folds": [
+        {
+          "fold": 1,
+          "keep_threshold": -542.5910191126417,
+          "winsor_limits": [
+            -580.0,
+            490.0
+          ]
+        },
+        {
+          "fold": 2,
+          "keep_threshold": -547.0602399372874,
+          "winsor_limits": [
+            -611.85,
+            486.85
+          ]
+        },
+        {
+          "fold": 3,
+          "keep_threshold": -528.9221479766817,
+          "winsor_limits": [
+            -625.0,
+            482.75000000000006
+          ]
+        },
+        {
+          "fold": 4,
+          "keep_threshold": -523.773341562754,
+          "winsor_limits": [
+            -623.65,
+            478.6500000000001
+          ]
+        },
+        {
+          "fold": 5,
+          "keep_threshold": -436.1713831657429,
+          "winsor_limits": [
+            -620.0,
+            479.54999999999984
+          ]
+        },
+        {
+          "fold": 6,
+          "keep_threshold": -428.944126727198,
+          "winsor_limits": [
+            -620.0,
+            480.0
+          ]
+        },
+        {
+          "fold": 7,
+          "keep_threshold": -545.9105357797032,
+          "winsor_limits": [
+            -625.0,
+            480.0
+          ]
+        },
+        {
+          "fold": 8,
+          "keep_threshold": -502.6813799721081,
+          "winsor_limits": [
+            -625.0,
+            480.0
+          ]
+        }
+      ],
+      "prediction_percentiles": [
+        [
+          0.0,
+          -644.9958359644767
+        ],
+        [
+          0.05,
+          -609.7054535586935
+        ],
+        [
+          0.1,
+          -600.966336793736
+        ],
+        [
+          0.15,
+          -596.4482038259852
+        ],
+        [
+          0.2,
+          -591.0939619049061
+        ],
+        [
+          0.25,
+          -588.440347424744
+        ],
+        [
+          0.3,
+          -585.1165829288334
+        ],
+        [
+          0.35,
+          -582.0852390259697
+        ],
+        [
+          0.4,
+          -579.6013981289077
+        ],
+        [
+          0.45,
+          -576.8529116239906
+        ],
+        [
+          0.5,
+          -574.4557107219682
+        ],
+        [
+          0.55,
+          -571.8059554689017
+        ],
+        [
+          0.6,
+          -569.5012851184781
+        ],
+        [
+          0.65,
+          -566.7772753949223
+        ],
+        [
+          0.7,
+          -564.516522803756
+        ],
+        [
+          0.75,
+          -561.923596141803
+        ],
+        [
+          0.8,
+          -559.615245577749
+        ],
+        [
+          0.85,
+          -556.6517172677211
+        ],
+        [
+          0.9,
+          -553.0971566053801
+        ],
+        [
+          0.95,
+          -547.1330706287239
+        ],
+        [
+          1.0,
+          -403.32633095767966
+        ]
+      ],
+      "winsor_p": 0.01
+    }
+  },
+  "hybrid_policy": {
+    "gamma_rules": {},
+    "gammas": {
+      "CALLS_1DTE_1515": 1.0,
+      "PUTS_1DTE_1515": 1.0
+    },
+    "tails": {
+      "CALLS_0DTE_11": [
+        0.05,
+        0.95
+      ],
+      "PUTS_0DTE_11": [
+        0.05,
+        0.96
+      ]
+    }
+  },
+  "metrics": {
+    "no_kill": {
+      "CVaR": -485.0,
+      "EDP": 397.6470588235294,
+      "MaxDrawdown": 485.0,
+      "PF": 8.115789473684211,
+      "Sharpe": 0.992750477020711,
+      "WinRate": 0.8823529411764706
+    },
+    "hybrid": {
+      "CVaR": -485.0,
+      "EDP": 380.38461538461536,
+      "MaxDrawdown": 485.0,
+      "PF": 6.205263157894737,
+      "Sharpe": 0.829775418002099,
+      "WinRate": 0.8461538461538461
+    },
+    "per_book_no_kill_edp": {
+      "CALLS_0DTE_11": 669.1666666666666,
+      "CALLS_1DTE_1515": 16.25,
+      "PUTS_0DTE_11": 381.6666666666667,
+      "PUTS_1DTE_1515": 390.0
+    }
+  },
+  "artifacts": {
+    "root": "tests/golden_artifacts",
+    "files": [
+      {
+        "name": "calls_edge_attribution.json",
+        "path": "tests/golden_artifacts/apply/calls_edge_attribution.json",
+        "relative": "apply/calls_edge_attribution.json",
+        "sha256": "273b8e19d4fb83aae756fa93a2e610a4724fffa46dcec6d5a0ab4ff53415a3c1"
+      },
+      {
+        "name": "calls_edge_report.csv",
+        "path": "tests/golden_artifacts/apply/calls_edge_report.csv",
+        "relative": "apply/calls_edge_report.csv",
+        "sha256": "4aefc8f3313f22a2002f645beb738f76f09d73e2c038df460e435aca434d38ae"
+      },
+      {
+        "name": "fold_stability.csv",
+        "path": "tests/golden_artifacts/apply/fold_stability.csv",
+        "relative": "apply/fold_stability.csv",
+        "sha256": "b0300aad0906c9fc2bc503206139d26c52320f1048e418add589337fcb536c26"
+      },
+      {
+        "name": "gamma_backtest.csv",
+        "path": "tests/golden_artifacts/apply/gamma_backtest.csv",
+        "relative": "apply/gamma_backtest.csv",
+        "sha256": "41f81f20ff1dd2386927e681935a8701080273250fb9a2036983ae25f851dc6e"
+      },
+      {
+        "name": "hybrid_input.csv",
+        "path": "tests/golden_artifacts/apply/hybrid_input.csv",
+        "relative": "apply/hybrid_input.csv",
+        "sha256": "87a471bcf57139758f3389b405208fbcfc7ae52f0717175aeecfc5e17f408461"
+      },
+      {
+        "name": "portfolio_metrics_extended.csv",
+        "path": "tests/golden_artifacts/apply/portfolio_metrics_extended.csv",
+        "relative": "apply/portfolio_metrics_extended.csv",
+        "sha256": "73974321c4d2c00f5add47ce083f156ddc6e709b561256f6e05e822afafd665a"
+      },
+      {
+        "name": "manifest.json",
+        "path": "tests/golden_artifacts/artifacts/train/manifest.json",
+        "relative": "artifacts/train/manifest.json",
+        "sha256": "039980e9d26acf6e2ad12dbe0eea1afd12736567da28a164a6baa5f8e0ee21dd"
+      },
+      {
+        "name": "manifest.json",
+        "path": "tests/golden_artifacts/discovery/manifest.json",
+        "relative": "discovery/manifest.json",
+        "sha256": "740dc0a6ef08f57696cda5ac444a3f5eda9cb4a687365c757e50b4be03fce427"
+      },
+      {
+        "name": "policy.json",
+        "path": "tests/golden_artifacts/hybrid/policy.json",
+        "relative": "hybrid/policy.json",
+        "sha256": "593e59af032e9da63ae567750f9bdc79393e80cee2cab358d3e3eb042e96e553"
+      },
+      {
+        "name": "digests.json",
+        "path": "tests/golden_artifacts/live_kit/digests.json",
+        "relative": "live_kit/digests.json",
+        "sha256": "9ebda664d04a1f6148f44468a3c6ed0ba967ac41777d7d1f6f55e379128929c0"
+      },
+      {
+        "name": "manifest.json",
+        "path": "tests/golden_artifacts/live_kit/discovery/manifest.json",
+        "relative": "live_kit/discovery/manifest.json",
+        "sha256": "740dc0a6ef08f57696cda5ac444a3f5eda9cb4a687365c757e50b4be03fce427"
+      },
+      {
+        "name": "rules_ci.json",
+        "path": "tests/golden_artifacts/live_kit/discovery/rules_ci.json",
+        "relative": "live_kit/discovery/rules_ci.json",
+        "sha256": "b454fa90a3a6f25eb36d30a08b65bb6311927567e4b84a33fc8dc7daed03e752"
+      },
+      {
+        "name": "policy.json",
+        "path": "tests/golden_artifacts/live_kit/hybrid/policy.json",
+        "relative": "live_kit/hybrid/policy.json",
+        "sha256": "593e59af032e9da63ae567750f9bdc79393e80cee2cab358d3e3eb042e96e553"
+      },
+      {
+        "name": "live_kit.json",
+        "path": "tests/golden_artifacts/live_kit/live_kit.json",
+        "relative": "live_kit/live_kit.json",
+        "sha256": "b921146d9e6818d13fccf3a560cc1422a79fa0cca342fdd88db853afe35bcf02"
+      },
+      {
+        "name": "manifest.json",
+        "path": "tests/golden_artifacts/live_kit/manifest.json",
+        "relative": "live_kit/manifest.json",
+        "sha256": "b2a8a3d49edcf839b7aac533143d9de116e10526a57bac0415b45b65c6fd29aa"
+      },
+      {
+        "name": "manifest.json",
+        "path": "tests/golden_artifacts/live_kit/models/manifest.json",
+        "relative": "live_kit/models/manifest.json",
+        "sha256": "039980e9d26acf6e2ad12dbe0eea1afd12736567da28a164a6baa5f8e0ee21dd"
+      }
+    ]
+  },
+  "acceptance": {
+    "tolerances": {
+      "edp_abs": 2.0,
+      "pf_abs": 0.03,
+      "cvar_abs": 150.0,
+      "sharpe_abs": 0.5,
+      "maxdrawdown_abs": 150.0,
+      "winrate_abs": 0.1
+    },
+    "per_book_edp_abs": 3.0,
+    "hash_required": false
+  }
+}

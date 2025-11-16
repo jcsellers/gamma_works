@@ -1,0 +1,4 @@
+# Ensure frozen backtest artifacts keep their original line endings so
+# SHA-256 hashes declared in manifests remain portable across platforms.
+data/backtest_data/**/*.csv text eol=lf
+tests/fixtures/backtest/*.csv text eol=lf

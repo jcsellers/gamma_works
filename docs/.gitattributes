@@ -1,0 +1,6 @@
+# Ensure golden CSV artifacts always keep their LF endings so Git never
+# rewrites them on checkout (which would corrupt the published hashes).
+# Frozen backtest bundles — force LF endings so Git never rewrites hashes.
+data/backtest_data/**.csv text eol=lf
+# Golden fixtures used in tests
+tests/fixtures/backtest/*.csv text eol=lf

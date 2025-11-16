@@ -1,0 +1,97 @@
+{
+  "actions": [
+    {
+      "book": "BOOK",
+      "decile": null,
+      "final_action": "KEEP_SHORT",
+      "kill_flag": false,
+      "margin_to_threshold": 0.06999999999999995,
+      "policy_type": "none",
+      "rationale": {
+        "confidence": 0.71003485136253,
+        "gamma_base": 1.0,
+        "keep": true,
+        "keep_fraction": 0.6666666666666666,
+        "kill_flag": false,
+        "kill_switch": false,
+        "margin": 0.06999999999999995,
+        "margin_to_threshold": 0.06999999999999995,
+        "policy_type": "none",
+        "prediction": 0.72,
+        "reason_text": "Margin +0.070; Keep votes 67%",
+        "score": 0.72,
+        "tails": null,
+        "threshold": 0.65,
+        "thresholds": {
+          "model_threshold": 0.65
+        }
+      },
+      "reason_text": "Margin +0.070; Keep votes 67%",
+      "rule_action": "KEEP_SHORT",
+      "score": 0.72,
+      "session": "11:00",
+      "size_gamma": 1.0,
+      "thresholds": {
+        "model_threshold": 0.65
+      },
+      "why": {
+        "confidence": 0.71003485136253,
+        "gamma_base": 1.0,
+        "keep": true,
+        "keep_fraction": 0.6666666666666666,
+        "kill_flag": false,
+        "kill_switch": false,
+        "margin": 0.06999999999999995,
+        "margin_to_threshold": 0.06999999999999995,
+        "policy_type": "none",
+        "prediction": 0.72,
+        "reason_text": "Margin +0.070; Keep votes 67%",
+        "score": 0.72,
+        "tails": null,
+        "threshold": 0.65,
+        "thresholds": {
+          "model_threshold": 0.65
+        }
+      }
+    }
+  ],
+  "decision_context_id": "sha256:de0fed580dec99d6f291f440c2841230251ad94b31322ce44d850909c45c311f",
+  "decisions": [
+    {
+      "action": "TRADE_SIGNAL",
+      "book": "BOOK",
+      "session": "11:00",
+      "value": {
+        "folds": [
+          {
+            "keep": true
+          },
+          {
+            "keep": false
+          },
+          {
+            "keep": true
+          }
+        ],
+        "keep": true,
+        "prediction": 0.72,
+        "threshold": 0.65
+      }
+    }
+  ],
+  "generated_at": "2024-07-01T00:00:00+00:00",
+  "kit_dir": "C:\\Users\\justin\\AppData\\Local\\Temp\\pytest-of-justin\\pytest-0\\test_decide_json_output_includ0\\kit",
+  "manifest": {
+    "version": "ci"
+  },
+  "policy": {},
+  "sessions": [
+    {
+      "features": {},
+      "open_date": "2024-07-01",
+      "session": "11:00",
+      "warnings": []
+    }
+  ],
+  "warnings": []
+}

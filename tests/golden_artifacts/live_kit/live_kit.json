@@ -1,0 +1,56 @@
+{
+  "books": {
+    "CALLS_0DTE_11": {
+      "expected_value": -2132.9973930192505,
+      "importance": {
+        "Intraday_Move_OpenToEntry_11": 273.95194427427026,
+        "Intraday_Move_OpenToEntry_1515": 652.669173944211,
+        "VIX_Entry_11": 238.90911601973352,
+        "VIX_Entry_1515": 175.86658429185889,
+        "closing_vix": 0.0,
+        "gap": 246.55139528805782,
+        "movement": 726.3165286461497,
+        "opening_vix": 0.0
+      }
+    },
+    "CALLS_1DTE_1515": {
+      "expected_value": -537.776914671703,
+      "importance": {
+        "Intraday_Move_OpenToEntry_11": 4.601897747552735,
+        "Intraday_Move_OpenToEntry_1515": 4.716778969232156,
+        "VIX_Entry_11": 3.6564024374261765,
+        "VIX_Entry_1515": 6.679690945445392,
+        "closing_vix": 0.0,
+        "gap": 3.2514102941785374,
+        "movement": 0.0,
+        "opening_vix": 0.0
+      }
+    },
+    "PUTS_0DTE_11": {
+      "expected_value": -2522.8454431912196,
+      "importance": {
+        "Intraday_Move_OpenToEntry_11": 629.3041281207334,
+        "Intraday_Move_OpenToEntry_1515": 534.4728773290742,
+        "VIX_Entry_11": 368.7713717916239,
+        "VIX_Entry_1515": 327.1416611615239,
+        "closing_vix": 0.0,
+        "gap": 219.63778662429502,
+        "movement": 419.87036131109005,
+        "opening_vix": 0.0
+      }
+    },
+    "PUTS_1DTE_1515": {
+      "expected_value": -572.5996124111077,
+      "importance": {
+        "Intraday_Move_OpenToEntry_11": 4.5880657909946185,
+        "Intraday_Move_OpenToEntry_1515": 4.464744324235985,
+        "VIX_Entry_11": 4.5429834175473855,
+        "VIX_Entry_1515": 8.931327077422184,
+        "closing_vix": 0.0,
+        "gap": 4.736814179523929,
+        "movement": 0.0,
+        "opening_vix": 0.0
+      }
+    }
+  }
+}

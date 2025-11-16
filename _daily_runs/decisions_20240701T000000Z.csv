@@ -1,0 +1,2 @@
+decision_context_id,generated_at,session,book,rule_action,final_action,size_gamma,score,margin_to_threshold,kill_flag,policy_type,decile,reason_text,confidence,top_features,threshold_model_threshold
+sha256:de0fed580dec99d6f291f440c2841230251ad94b31322ce44d850909c45c311f,2024-07-01T00:00:00+00:00,11:00,BOOK,KEEP_SHORT,KEEP_SHORT,1.0,0.72,0.06999999999999995,false,none,,Margin +0.070; Keep votes 67%,0.71003485136253,,0.65

@@ -1,0 +1,14 @@
+{
+  "book": "CALLS_0DTE_11",
+  "fold": 3,
+  "keep_threshold": 597.0228299058019,
+  "kept_count": 1,
+  "metrics": {
+    "CVaR": 410.0,
+    "EDP": 410.0,
+    "MaxDrawdown": 0.0,
+    "PF": 9999.0,
+    "Sharpe": NaN,
+    "WinRate": 1.0
+  }
+}

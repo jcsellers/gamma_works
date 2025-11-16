@@ -1,0 +1,2 @@
+decision_context_id,generated_at,session,book,rule_action,final_action,size_gamma,score,margin_to_threshold,kill_flag,policy_type,decile,reason_text,confidence,top_features
+sha256:c10a009faf201aa42e402c570fc72dadcbba0564961a93a7c405c9309a908897,2024-07-01T13:30:00+00:00,11:00,BOOK,SKIP,SKIP,0.9,,,false,none,,Rule SKIP,,

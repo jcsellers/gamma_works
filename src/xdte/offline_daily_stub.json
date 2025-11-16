@@ -1,0 +1,19 @@
+{
+  "L1_TS": 0.9,
+  "L1_VIX_Close": 16.5,
+  "L1_VIX_pct": 0.55,
+  "L1_vvix_close": 93.0,
+  "L1_vvix_pct": 0.6,
+  "L1_vvix_ema20": 88.0,
+  "L1_vvix_ema30": 87.5,
+  "L1_SPX_ATR_Pct": 0.012,
+  "L1_SPX_Drawdown_Pct": -0.015,
+  "L1_rv5": 0.18,
+  "L1_rv20": 0.19,
+  "L1_vvix_above_ema20": true,
+  "L1_vvix_above_ema30": true,
+  "gap": 4.5,
+  "movement": 3.25,
+  "closing_vix": 16.5,
+  "opening_vix": 16.2
+}
