@@ -1,77 +1,112 @@
-# Contributing to XDTE
+# Contributing to Your Project
 
-Thanks for supporting the XDTE selector. This guide covers the local
-environment, required quality gates, and the governance rules around immutable
-data and golden parity updates.
+Thank you for your interest in contributing! This document provides guidelines for contributing to this project.
 
-## Environment setup
+## Getting Started
 
-1. Create a virtual environment and install the tooling extras:
+1. Fork the repository
+2. Clone your fork: `git clone https://github.com/yourusername/your-project.git`
+3. Create a new branch: `git checkout -b feature/your-feature-name`
+
+## Development Environment
+
+### Setup
+
+1. Create a virtual environment:
    ```bash
    python -m venv .venv
    source .venv/bin/activate
-   pip install -e .[dev]
    ```
-2. Set `PYTHONPATH=src` when invoking modules directly (the `xdte` console script
-   configures this automatically).
-3. Optional: install the `pre-commit` hooks (`pre-commit install`) to run the
-   linters before each commit.
 
-## Quality gates
+2. Install the package in editable mode with development dependencies:
+   ```bash
+   pip install -e ".[dev]"
+   ```
 
-All pull requests must pass the repository quality gates before submission:
+3. Install pre-commit hooks:
+   ```bash
+   pre-commit install
+   ```
+
+## Code Standards
+
+### Style Guidelines
+
+- Follow PEP 8 style guidelines
+- Use type hints where appropriate
+- Write clear, descriptive docstrings
+- Keep functions focused and modular
+
+### Tools
+
+This project uses several tools to maintain code quality:
+
+- **Black**: Code formatting
+- **isort**: Import sorting
+- **Ruff**: Fast linting
+- **MyPy**: Static type checking (optional)
+- **Bandit**: Security checks (optional)
+- **pytest**: Testing framework
+
+### Running Quality Checks
+
+Before committing, ensure your code passes all checks:
 
 ```bash
-ruff check .
+# Format code
 black .
 isort .
-mypy --strict
+
+# Check linting
+ruff check .
+
+# Run tests
 pytest
 
-Targeted artefact guards live in:
+# Or run all checks with pre-commit
+pre-commit run --all-files
+```
+
+## Testing
+
+- Write tests for all new features and bug fixes
+- Maintain or improve code coverage
+- Place unit tests in `tests/unit/`
+- Place integration tests in `tests/integration/`
 
 ```bash
-pytest tests/test_cli.py::test_decide_reports_dual_sessions_and_why tests/unit/test_apply.py::test_portfolio_metrics_extended_report tests/unit/test_gamma.py
+# Run tests
+pytest
+
+# Run tests with coverage
+pytest --cov=src --cov-report=term-missing
 ```
 
-Run them when touching the CLI presentation layer, apply reports, or gamma
-mapping logic to catch schema regressions early.
-```
+## Pull Request Process
 
-These commands match the defaults in [`pyproject.toml`](pyproject.toml) and the
-instructions in [`docs/README.md`](docs/README.md). Run them locally prior to
-pushing to avoid CI failures. The `ruff` configuration blocks `print`
-statements in library code (rule `T201`) so rely on the logging utilities when
-surfacing information to users. The CLI enforces structured logging, which is
-covered by the accompanying regression tests.
+1. Update documentation as needed
+2. Add tests for new functionality
+3. Ensure all tests pass
+4. Update the CHANGELOG if applicable
+5. Submit a pull request with a clear description of changes
 
-## Data immutability rules
+### PR Guidelines
 
-- Treat the datasets under [`data/`](data/) as read-only fixtures. Only refresh
-  them when coordinated golden parity updates are planned.
-- Never overwrite artefacts under [`tests/golden/`](tests/golden/) manually. Use
-  the documented update scripts to regenerate new snapshots.
-- If you need exploratory data, generate it under a separate path (e.g.
-  `scratch/`) and add it to `.gitignore`.
+- Keep PRs focused on a single feature or fix
+- Write clear commit messages
+- Reference any related issues
+- Ensure CI checks pass
 
-These rules align with the "Golden Artifacts" guardrails in [`AGENTS.md`](AGENTS.md);
-review that section before touching any immutable datasets or manifests.
+## Code Review
 
-## Golden update process
+- Be respectful and constructive
+- Address all feedback
+- Be open to suggestions
 
-1. Execute the sanctioned training pipeline against the approved backtest bundle
-   (see [`docs/README.md`](docs/README.md) for the canonical commands).
-2. Run [`tools/update_golden_manifest.py`](tools/update_golden_manifest.py) to
-   copy the refreshed artefacts into `tests/golden_artifacts/` and regenerate
-   `tests/golden_manifest.json`. Use `--books BOOK_A BOOK_B` when you need to
-   refresh only a subset of books during investigations; omit it for the
-   default full snapshot. The helper syncs the full apply bundle, including
-   `calls_edge_*`, `fold_stability.csv`, and `portfolio_metrics_extended.csv`.
-3. Commit the regenerated snapshot together with the code changes and updated
-   documentation (including notes in [`docs/PLAN_AND_TICKETS.md`](docs/PLAN_AND_TICKETS.md)
-   if the roadmap shifts).
-4. Ensure the full quality gate suite still passes before opening the pull
-   request.
+## Questions?
 
-By following this process we keep backtests reproducible, history auditable, and
-upgrades predictable.
+If you have questions or need help, feel free to:
+- Open an issue
+- Contact the maintainers
+
+Thank you for contributing!

@@ -1,11 +1,10 @@
-# Development requirements for the XDTE project skeleton
+# Development dependencies
+# These are also defined in pyproject.toml [project.optional-dependencies.dev]
+# This file is kept for convenience and CI/CD compatibility
+
 black>=24.4.2
-flake8>=7.0.0
-hypothesis[pandas]>=6.103.0
 isort>=5.13.2
-lightgbm>=4.0.0
-mypy>=1.10.0
-pre-commit>=3.7.0
+ruff>=0.5.0
 pytest>=7.4.4
 pytest-cov>=4.1.0
-shap>=0.44.0
+pre-commit>=3.7.0

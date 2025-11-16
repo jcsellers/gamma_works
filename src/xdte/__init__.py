@@ -1,6 +1,5 @@
-"""Top-level package for the XDTE project."""
+"""
+Your project package.
+"""
 
-__all__ = [
-    "config",
-    "metrics",
-]
+__version__ = "0.1.0"
