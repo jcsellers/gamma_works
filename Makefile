@@ -26,7 +26,7 @@ test:
 	pytest
 
 test-cov:
-	pytest --cov=src/xdte --cov-report=term-missing --cov-report=html
+	pytest --cov=src --cov-report=term-missing --cov-report=html
 
 lint:
         ruff check .

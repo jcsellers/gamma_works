@@ -1,9 +1,0 @@
-rank,feature,importance,method
-1,VIX_Entry_1515,8.931327077422184,shap
-2,gap,4.736814179523929,shap
-3,Intraday_Move_OpenToEntry_11,4.5880657909946185,shap
-4,VIX_Entry_11,4.5429834175473855,shap
-5,Intraday_Move_OpenToEntry_1515,4.464744324235985,shap
-6,closing_vix,0.0,shap
-7,movement,0.0,shap
-8,opening_vix,0.0,shap

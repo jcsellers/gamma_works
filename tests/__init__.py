@@ -1,1 +1,3 @@
-"""Test package placeholder."""
+"""
+Test suite for your project.
+"""
